@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formulario-de-encuesta.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">formulario de Encuesta</h1>
+
+    <p id="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla,
+      laboriosam, velit asperiores illum sequi magnam cum.
+    </p>
+
+    <form id="survey-form">
+
+      <label id="name-label">Nombre</label>
+      <br />
+      <input id="name" type="text" placeholder="Ingresa tu nombre" required/>
+      
+      <br /><br />
+      
+      <label id="email-label">Email</label>
+      <br />
+      <input id="email" type="email" placeholder="Ingresa tu email" required/>
+      
+      <br /><br />
+     
+      <label id="number-label">Edad</label>
+      <br />
+      <input id="number" type="number" placeholder="Ingresa tu edad" min="1" max="100" required/>
+     
+      <br /><br />
+
+      <label id="">Seleccione una opción</label>
+      <select id="dropdown">
+        <option>Seleccionar</option>
+        <option>Opción 1</option>
+        <option>Opción 2</option>
+        <option>Opción 3</option>
+      </select>
+
+      <br /><br />
+
+      <label id="">Seleccione una opción</label><br />
+      <label><input name="opcion-radio" type="radio" checked/>Opción 1</label><br />
+      <label><input name="opcion-radio" type="radio" />Opción 2</label><br />
+      <label><input name="opcion-radio" type="radio" />Opción 3</label>
+
+      <br /><br />
+
+      <label id="">Seleccione una opción</label><br />
+      <label><input type="checkbox" value="opcion-checkbox" /> Opción 1</label><br />
+      <label><input type="checkbox" value="opcion-checkbox" /> Opción 2</label><br />
+      <label><input type="checkbox" value="opcion-checkbox" /> Opción 3</label>
+
+      <br /><br />
+
+      <label >Comentario</label><br />
+      <textarea placeholder="Contanos algo más"></textarea>
+
+      <br /><br />
+
+      <button id="submit" type="submit">Enviar</button>
+
+    </form>
+  </body>
+</html>
