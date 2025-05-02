@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+body {
+    margin: 50px;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(to top, #000000, #150206, #210409, #2b0509, #350407, #380305, #3c0103, #3f0000, #3d0000, #3a0000, #380000, #360000);
+}
+
+#main {
+    margin: 0 200px;
+    padding: 20px 40px;
+    border: 1px solid #ffffff;
+    text-align:left;
+}
+
+#title {
+    font-size: 90px;
+    text-align:center;
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    margin: 0;
+}
+
+hr {
+    margin: 20px 0 40px 0;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+
+#img-caption {
+    margin: 50px 0;
+}
+
+h2 {
+    font-size: 50px;
+    text-align:center;
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    margin: 0;
+}
+
+#album-container {
+    border: 1px solid #ffffff;
+    padding: 30px;
+}
+
+h3 {
+    font-size: 30px;
+    text-align:center;
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    margin: 0;
+}
+
+#album-div {
+    display: flex;
+    
+}
+
+#album-div p {
+    max-width: 45%;
+    padding: 0 20px;
+    text-align:justify;
+}
+
+#tribute-link {
+    color: #ffffff;
+}
