@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina-de-documentacion-tecnica.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header><h1>CSS Documentación</h1></header>
+        <li><a class="nav-link" href="#introduccion_al_css">Introducción al CSS</a></li>
+        <li><a class="nav-link" href="#selectores_css">Selectores CSS</a></li>
+        <li><a class="nav-link" href="#colores_y_unidades">Colores y unidades</a></li>
+        <li><a class="nav-link" href="#modelo_de_caja">Modelo de Caja (Box Model)</a></li>
+        <li><a class="nav-link" href="#textos_y_tipografias">Textos y Tipografías</a></li>
+        <li><a class="nav-link" href="#posicionamiento">Posicionamiento</a></li>
+        <li><a class="nav-link" href="#display_y_layouts">Display y Layouts</a></li>
+        <li><a class="nav-link" href="#diseño_adaptable">Responsive Design (Diseño adaptable)</a></li>
+        <li><a class="nav-link" href="#animaciones_y_transiciones">Animaciones y Transiciones</a></li>
+        <li><a class="nav-link" href="#buenas_practicas_y_organizacion">Buenas prácticas y organización</a></li>
+    </nav>
+
+    <main id="main-doc">
+
+        <h1>CSS</h1>
+
+        <section class="main-section" id="introduccion_al_css">
+            <header><h2>Introducción al CSS</h2></header>
+                <p>
+                    CSS (Cascading Style Sheets) es el lenguaje que usamos para darle estilo 
+                    a las páginas web. Si el HTML es el esqueleto, el CSS es la ropa, el 
+                    maquillaje y toda la onda. Sirve para cambiar colores, tamaños, posiciones, 
+                    fuentes y mucho más.
+                </p>
+                <h3>Ejemplo básico:</h3>
+                <li>HTML:</li>
+                <code>&lt;p class=&quot;importante&quot;&gt;¡Hola mundo!&lt;/p&gt;</code>
+                <br /><br />
+                <li>CSS:</li>
+                <code>.importante { color: red; font-size: 24px; }</code>
+        </section>
+
+        <section class="main-section" id="selectores_css">
+            <header><h2>Selectores CSS</h2></header>
+                <p>
+                    Los selectores son la forma en que CSS elige a qué elementos aplicar 
+                    los estilos. Podés seleccionar por tipo, clase, id, atributos y más.
+                </p>
+                <h3>Ejemplos:</h3>
+                <li>Elemento:</li>
+                <code>p { color: blue; }</code>
+                <br /><br />
+                <li>Clase:</li>
+                <code>.titulo { font-weight: bold; }</code>
+                <br /><br />
+                <li>ID:</li>
+                <code>#principal { background-color: yellow; }</code>
+                <br /><br />
+                <li>Selector descendente:</li>
+                <code>nav a { text-decoration: none; }</code>
+        </section>
+
+        <section class="main-section" id="colores_y_unidades">
+            <header><h2>Colores y unidades</h2></header>
+                <p>
+                    CSS te deja jugar con muchos tipos de colores y unidades para tamaño y 
+                    espaciado. Hay colores con nombre, hexadecimales, RGB y HSL. Y las 
+                    unidades pueden ser fijas o adaptables.
+                </p>
+                <h3>Ejemplos:</h3>
+                <code>
+                    h1 { <br />
+                        |   color: #ff5733; /* naranja */ <br />
+                        |   font-size: 2em;  /* 2 veces el tamaño del elemento padre */ <br />
+                        |   margin: 20px;    /* espacio con píxeles */ <br />
+                    }
+                </code>
+        </section>
+
+        <section class="main-section" id="modelo_de_caja">
+            <header><h2>Modelo de Caja (Box Model)</h2></header>
+                <p>
+                    Todo en CSS es como una cajita: contenido, padding (relleno interno), 
+                    border (borde) y margin (espacio hacia afuera). Con box-sizing controlás 
+                    si el tamaño incluye o no esos espacios.
+                </p>
+                <h3>Ejemplo:</h3>
+                <code>
+                    div { <br />
+                        |   width: 200px; <br />
+                        |   padding: 20px; <br />
+                        |   border: 5px solid black; <br />
+                        |   margin: 10px; <br />
+                        |   box-sizing: border-box; /* incluye padding y border en el width */ <br />
+                    }
+                </code>
+        </section>
+
+        <section class="main-section" id="textos_y_tipografias">
+            <header><h2>Textos y Tipografías</h2></header>
+                <p>
+                    Podés cambiar la fuente, el tamaño, el grosor, el interlineado, etc. Es clave 
+                    para que tu página no se vea como si saliera de 1998.
+                </p>
+                <h3>Ejemplo:</h3>
+                <code>
+                    body { <br />
+                        |   font-family: 'Arial', sans-serif; <br />
+                        |   font-size: 16px; <br />
+                        |   line-height: 1.5; <br />
+                        |   text-align: center; <br />
+                    }
+                </code>
+        </section>
+
+        <section class="main-section" id="posicionamiento">
+            <header><h2>Posicionamiento</h2></header>
+                <p>
+                    Controla dónde aparece un elemento. El position cambia cómo se comporta en 
+                    relación a otros elementos.
+                </p>
+                <h3>Ejemplo:</h3>
+                <code>
+                    .caja { <br />
+                        |   position: absolute; <br />
+                        |   top: 50px; <br />
+                        |   left: 100px; <br />
+                    }
+                </code>
+        </section>
+
+        <section class="main-section" id="display_y_layouts">
+            <header><h2>Display y Layouts</h2></header>
+                <p>
+                    display define cómo se muestran los elementos. block, inline, flex y grid son 
+                    los más comunes. flex y grid te dan poderes mágicos para hacer layouts responsive.
+                </p>
+                <h3>Ejemplo con Flexbox:</h3>
+                <code>
+                    .contenedor { <br />
+                        |   display: flex; <br />
+                        |   justify-content: space-between; <br />
+                        |   align-items: center; <br />
+                    }
+                </code>
+        </section>
+
+        <section class="main-section" id="diseño_adaptable">
+            <header><h2>Responsive Design (Diseño adaptable)</h2></header>
+                <p>
+                    Diseñá para que tu web se vea bien en todos los dispositivos. Con @media podés 
+                    aplicar estilos según el tamaño de la pantalla.
+                </p>
+                <h3>Ejemplo:</h3>
+                <code>
+                    @media (max-width: 600px) { <br />
+                        |   body { background-color: lightblue; } <br /> 
+                    }
+                </code>
+        </section>
+
+        <section class="main-section" id="animaciones_y_transiciones">
+            <header><h2>Animaciones y Transiciones</h2></header>
+                <p>
+                    Dale vida a tu sitio con transiciones suaves y animaciones personalizadas. 
+                    Podés cambiar colores, posiciones, opacidades, ¡lo que quieras!
+                </p>
+                <h3>Ejemplo:</h3>
+                <code>
+                    .boton { <br />
+                        |   transition: background-color 0.3s; <br />
+                    } <br /><br />
+                    .boton:hover { <br />
+                        |   background-color: green; <br />
+                    }
+                </code>
+        </section>
+
+        <section class="main-section" id="buenas_practicas_y_organizacion">
+            <header><h2>Buenas prácticas y organización</h2></header>
+                <p>
+                    Escribí CSS limpio, ordenado y fácil de mantener. Usá clases reutilizables, 
+                    nombres claros, y si podés, metete con metodologías como BEM. Separá tu CSS 
+                    en archivos y mantené tu código DRY (Don't Repeat Yourself).
+                </p>
+                <h3>Ejemplo de clase reutilizable:</h3>
+                <code>
+                    .btn { <br />
+                        |   padding: 10px 20px; <br />
+                        |   background: black; <br />
+                        |   color: white; <br />
+                        |   border: none; <br />
+                    }
+                </code>
+        </section>
+
+    </main>
+</body>
+</html>
