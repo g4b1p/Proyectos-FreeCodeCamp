@@ -6,7 +6,7 @@ body {
     font-size: 18px;
     color: #ffffff;
     font-family: "Poppins", sans-serif;
-    background-image: linear-gradient(to top, #000000, #150206, #210409, #2b0509, #350407, #380305, #3c0103, #3f0000, #3d0000, #3a0000, #380000, #360000);
+    background-image: linear-gradient(to right top, #000000, #0b0002, #140003, #1b0004, #200003, #230005, #260008, #29000c, #2a0015, #29001e, #250027, #1a0032);
 }
 
 #main {
@@ -14,6 +14,7 @@ body {
     padding: 20px 40px;
     border: 1px solid #ffffff;
     text-align:left;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #title {
@@ -48,6 +49,7 @@ h2 {
 #album-container {
     border: 1px solid #ffffff;
     padding: 30px;
+    margin: 40px 0;
 }
 
 h3 {
