@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+body {
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Cal Sans", sans-serif;
+    background-image: linear-gradient(to right top, #10003b, #12013e, #140141, #170144, #1a0147, #22003f, #270038, #290031, #270022, #210016, #16000a, #000000);
+    overflow-x: hidden;
+}
+
+#header {
+    text-align: center;
+    padding: 20px;
+}
+
+#header-img {
+    width: 400px;
+    height: auto;
+    
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+#main {
+    margin: 0 15%;
+    padding: 20px 40px;
+    border: 1px solid #ffffff;
+    text-align:left;
+}
+
+.titles {
+    text-align: center;
+}
+
+#section {
+    margin: 100px 0;
+}
+
+#section-img {
+    width: 100%;
+    height: auto;
+}
+
+#section iframe {
+    width: 100%;
+    height: 600px;
+}
+
+#section h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.precios-tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.precios-tabla th, .precios-tabla td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+    text-align: left;
+}
+
+#form {
+    margin: 5% 25%;
+    padding: 40px;
+    border: 1px solid #ffffff;
+}
+
+#name, #documento, #email, #password {
+    font-size: 20px;
+    font-family: "Cal Sans", sans-serif;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+#submit {
+    font-size: 20px;
+    font-family: "Cal Sans", sans-serif;
+    padding: 10px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
