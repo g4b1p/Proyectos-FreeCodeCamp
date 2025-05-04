@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 body {
     margin: 0;
     font-size: 20px;
     color: #ffffff;
-    font-family: "Cal Sans", sans-serif;
-    background-image: linear-gradient(to right top, #10003b, #12013e, #140141, #170144, #1a0147, #22003f, #270038, #290031, #270022, #210016, #16000a, #000000);
+    font-family: "Unbounded", sans-serif;
     overflow-x: hidden;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/db8e65222187051.67e1b06e2e62c.jpg);
 }
 
 html {
@@ -23,7 +21,7 @@ html {
 }
 
 #header-img {
-    width: 400px;
+    width: 450px;
     height: auto;
 }
 
@@ -34,26 +32,47 @@ html {
 }
 
 #main {
-    margin: 0 15%;
-    padding: 20px 40px;
+    margin: 0 10%;
+    padding: 30px 10px;
 }
 
-.titles {
+#title {
     text-align: center;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+#sub-title{
+    text-align: center;
+    font-size: 20px;
 }
 
 #section {
-    margin: 100px 0;
+    margin: 50px 0;
+}
+
+#section-info {
+    display: flex;
+    align-items: center;
+}
+
+#section-info p {
+    width: 50%;
+    padding: 20px;
 }
 
 #section-img {
-    width: 100%;
+    width: 50%;
     height: auto;
+    padding: 10px;
+    border: 2px solid #ffffff;
 }
 
 #section iframe {
-    width: 100%;
-    height: 600px;
+    width: 60%;
+    height: 350px;
+    padding: 10px;
+    border: 2px solid #ffffff;
 }
 
 #section h3 {
@@ -80,7 +99,7 @@ html {
 
 #name, #documento, #email, #password {
     font-size: 20px;
-    font-family: "Cal Sans", sans-serif;
+    font-family: "Unbounded", sans-serif;
     width: 100%;
     height: 50px;
     padding: 10px;
@@ -90,16 +109,37 @@ html {
 
 #submit {
     font-size: 20px;
-    font-family: "Cal Sans", sans-serif;
+    font-family: "Unbounded", sans-serif;
     padding: 10px;
     width: 100%;
     border-radius: 50px;
-    background-color: #ffffff;
+    border: none;
+    background-color: #490096;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
     #header {
         flex-direction: column;
+    }
+
+    #section-info {
+        flex-direction: column;
+    }
+
+    #section-info p {
+        width: 100%;
+    }
+    
+    #section-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #section iframe {
+        width: 100%;
+        height: 350px;
     }
 
     #main {
