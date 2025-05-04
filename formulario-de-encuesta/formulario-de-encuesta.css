@@ -2,19 +2,30 @@
 
 body {
     margin: 0;
+    padding: 80px;
     font-size: 18px;
     color: #ffffff;
     font-family: "Poppins", sans-serif;
-    background-image: linear-gradient(to bottom, #845ec2, #766fd5, #627fe5, #458ef3, #009dff);
+    background-image: linear-gradient(to right bottom, #e6eea6, #ebef9f, #f1f099, #f8f192, #fff18b);
 }
 
-#title, #description {
+#title {
+    margin: 0;
+    font-size: 50px;
     text-align: center;
-    margin: 50px;
+    color: #000000;
+}
+
+#description {
+    text-align: center;
+    max-width: 800px;
+    color: #000000;
 }
 
 form {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color:#ffffff;
+    color: #000000;
+    border-radius: 50px;
     padding: 50px;
     max-width: 500px;
     margin: 0 auto;
@@ -23,6 +34,7 @@ form {
 input, select, textarea, button {
     font-size: 18px;
     font-family: "Poppins", sans-serif;
+    border: 2px solid #d1d1d1;
 }
 
 #name, #email, #number, #dropdown {
@@ -30,7 +42,6 @@ input, select, textarea, button {
     width: 100%;
     padding: 5px;
     border-radius: 5px;
-    border: none;
     box-sizing: border-box;
 }
 
@@ -39,16 +50,15 @@ textarea {
     height: 90px;
     padding: 5px;
     border-radius: 5px;
-    border: none;
     box-sizing: border-box;
 }
 
 #submit {
     padding: 10px 20px;
-    background-color: #845ec2;
-    color:#ffffff;
-    font-weight: bold;
-    border: none;
+    width: 100%;
+    background-color: #e6eea6;
+    color: #000000;
+    font-weight: 500;
     border-radius: 10px;
     cursor: pointer;
 }
