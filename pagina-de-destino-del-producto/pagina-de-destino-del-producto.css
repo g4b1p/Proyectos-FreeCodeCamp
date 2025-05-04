@@ -11,15 +11,20 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
 }
 
 #header-img {
     width: 400px;
     height: auto;
-    
 }
 
 .nav-link {
@@ -31,8 +36,6 @@ body {
 #main {
     margin: 0 15%;
     padding: 20px 40px;
-    border: 1px solid #ffffff;
-    text-align:left;
 }
 
 .titles {
@@ -92,4 +95,18 @@ body {
     width: 100%;
     border-radius: 50px;
     background-color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+    #header {
+        flex-direction: column;
+    }
+
+    #main {
+        margin: 0 5%;
+    }
+
+    #form {
+        margin: 5%;
+    }
 }
