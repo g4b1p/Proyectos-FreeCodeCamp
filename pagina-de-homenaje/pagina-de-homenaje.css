@@ -1,76 +1,120 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 body {
     margin: 50px;
     font-size: 18px;
     color: #ffffff;
-    font-family: "Poppins", sans-serif;
-    background-image: linear-gradient(to right top, #000000, #0b0002, #140003, #1b0004, #200003, #230005, #260008, #29000c, #2a0015, #29001e, #250027, #1a0032);
+    background-image: url(https://phinf.wevpstatic.net/MjAyMzEwMDVfMjQz/MDAxNjk2NDc1MTcyNzgx.hZojDadWpCq5PntJzLZnpmWqHCOKZfY3L0p-IVXDlUsg.4fD4zqrAJHceCeoK2hbk63cHMBIMnyx-GTkgH-ZTYesg.JPEG/df5f8dc2-a885-4473-9cb3-14631efd3198.jpeg?type=e1920);
+    font-family: "Unbounded", sans-serif;
 }
 
 #main {
-    margin: 0 200px;
-    padding: 20px 40px;
-    border: 1px solid #ffffff;
-    text-align:left;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 5%;
 }
 
 #title {
-    font-size: 90px;
-    text-align:center;
-    font-family: "DM Serif Display", serif;
-    font-style: italic;
+    font-size: 70px;
+    text-align: center;
     margin: 0;
+    font-family: "Unbounded", sans-serif;
 }
 
 hr {
-    margin: 20px 0 40px 0;
+    margin: 20px 0;
+}
+
+#principal-tribute-info {
+    display: flex;
+    align-items: center;
+    padding: 40px;
 }
 
 #image {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
 }
 
 #img-caption {
-    margin: 50px 0;
+    margin: 40px;
+    width: 100%;
+}
+
+#tribute-info {
+    background-color: #f5f5f5;
+    color: #000000;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+#border {
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 50px;
 }
 
 h2 {
     font-size: 50px;
-    text-align:center;
-    font-family: "DM Serif Display", serif;
-    font-style: italic;
+    text-align: center;
     margin: 0;
-}
-
-#album-container {
-    border: 1px solid #ffffff;
-    padding: 30px;
-    margin: 40px 0;
+    font-family: "Unbounded", sans-serif;
 }
 
 h3 {
     font-size: 30px;
-    text-align:center;
-    font-family: "DM Serif Display", serif;
-    font-style: italic;
+    text-align: center;
     margin: 0;
+    font-family: "Unbounded", sans-serif;
 }
 
-#album-div {
+#tribute-div {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
 }
 
-#album-div p {
-    max-width: 45%;
-    padding: 0 20px;
-    text-align:justify;
+#tribute-div ol {
+    font-family: "Unbounded", sans-serif;
+    font-size: 25px;
+}
+
+#tribute-img {
+    width: 35%;
+    height: auto;
 }
 
 #tribute-link {
-    color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    #principal-tribute-info {
+        flex-direction: column;
+    }
+
+    #image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #img-caption {
+        text-align: center;
+    }
+
+    #tribute-div {
+        flex-direction: column;
+    }
+    
+    #tribute-img {
+        width: 100%;
+        height: auto;
+    }
+
+    #tribute-div ol {
+        font-size: 22px;
+    }
 }
