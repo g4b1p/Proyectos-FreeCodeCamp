@@ -2,7 +2,7 @@
 
 body {
     margin: 50px;
-    font-size: 18px;
+    font-size: 20px;
     color: #ffffff;
     background-image: url(https://phinf.wevpstatic.net/MjAyMzEwMDVfMjQz/MDAxNjk2NDc1MTcyNzgx.hZojDadWpCq5PntJzLZnpmWqHCOKZfY3L0p-IVXDlUsg.4fD4zqrAJHceCeoK2hbk63cHMBIMnyx-GTkgH-ZTYesg.JPEG/df5f8dc2-a885-4473-9cb3-14631efd3198.jpeg?type=e1920);
     font-family: "Unbounded", sans-serif;
@@ -22,22 +22,25 @@ hr {
     margin: 20px 0;
 }
 
-#principal-tribute-info {
-    display: flex;
-    align-items: center;
+#img-div {
     padding: 40px;
+    max-width: 100%;
+    text-align: center;
 }
 
-#image {
-    max-width: 50%;
+img {
+    max-width: 100%;
+    display: block;
     height: auto;
-    border-radius: 50px;
-    border: 2px solid #ffffff;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 #img-caption {
     margin: 40px;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    text-align: justify;
 }
 
 #tribute-info {
@@ -79,6 +82,7 @@ h3 {
 #tribute-img {
     width: 35%;
     height: auto;
+    display: block;
 }
 
 #tribute-link {
@@ -87,17 +91,12 @@ h3 {
 }
 
 @media screen and (max-width: 1200px) {
-    #principal-tribute-info {
-        flex-direction: column;
-    }
-
-    #image {
-        max-width: 100%;
-        height: auto;
+    #title {
+        font-size: 50px;
     }
 
     #img-caption {
-        text-align: center;
+        text-align: justify;
     }
 
     #tribute-div {
