@@ -6,6 +6,81 @@
     <link rel="stylesheet" href="formulario-de-encuesta.css" />
     <title>formulario de Encuesta</title>
   </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+    body {
+        margin: 0;
+        padding: 80px;
+        font-size: 18px;
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+        background-image: linear-gradient(to right bottom, #e6eea6, #ebef9f, #f1f099, #f8f192, #fff18b);
+    }
+
+    #title {
+        margin: 0;
+        font-size: 50px;
+        text-align: center;
+        color: #fff18b;
+        text-shadow:
+            1px 1px 0 #e2e2e2,
+            2px 2px 0 #e2e2e2,
+            3px 3px 0 #e2e2e2,
+            4px 4px 0 #e2e2e2,
+            5px 5px 0 #e2e2e2;
+    }
+
+    #description {
+        text-align: center;
+        max-width: 800px;
+        color: #000000;
+    }
+
+    form {
+        background-color:#ffffff;
+        color: #000000;
+        border-radius: 50px;
+        padding: 50px;
+        max-width: 500px;
+        margin: 0 auto;
+        box-shadow: 5px 5px 15px rgba(95, 95, 95, 0.5);
+    }
+
+    input, select, textarea, button {
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        border: 2px solid #d1d1d1;
+    }
+
+    #name, #email, #number, #dropdown {
+        height: 45px;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        width: 100%;
+        height: 90px;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    #submit {
+        padding: 10px 20px;
+        width: 100%;
+        background-image: linear-gradient(to right bottom, #e6eea6, #ebef9f, #f1f099, #f8f192, #fff18b);
+        color: #ffffff;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        box-shadow: 5px 5px 15px rgba(95, 95, 95, 0.5);
+    }
+  </style>
   <body>
     <form id="survey-form">
 

@@ -6,6 +6,307 @@
     <link rel="stylesheet" href="pagina-web-de-portafolio-personal.css">
     <title>Página web de portafolio personal</title>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    body {
+        margin: 0;
+        font-size: 20px;
+        color: #000000;
+        background-color:hsla(3,0%,100%,1);
+        background-image:
+        radial-gradient(at 81% 19%, hsla(202,100%,68%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(0,100%,77%,1) 0px, transparent 50%);
+        font-family: "Unbounded", sans-serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 3vh;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px;
+        width: 90%;
+        border: 1px solid #000000;
+        background-color: #ffffff;
+        text-align: center;
+        z-index: 1000;
+        box-shadow: 10px 10px 15px rgba(95, 95, 95, 0.5);
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bolder;
+        margin: 0 100px;
+    }
+
+    #main {
+        padding: 15vh 20vh 0 20vh;
+    }
+
+    #welcome-section {
+        margin: 20vh 0 40vh 0;
+        text-align: center;
+    }
+
+    #welcome-section h1 {
+        font-family: "Caudex", serif;
+        font-size: 100px;
+        margin: 0;
+    }
+
+    #welcome-section p {
+        margin: 0;
+        font-style: italic;
+    }
+
+    #sobre-mi {
+        padding: 15vh 0;
+    }
+
+    .presentacion-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container {
+        width: 600px;
+        height: 500px;
+        perspective: 1000px;
+        margin: 50px 0;
+        font-size: 25px;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        transform-style: preserve-3d;
+        transition: transform 0.8s;
+    }
+
+    .card-container:hover .card {
+        transform: rotateY(180deg);
+    }
+
+    .card-face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        color: rgb(0, 0, 0);
+    }
+
+    .front {
+        background: transparent;
+    }
+
+    .back {
+        background: #000000;
+        color: rgb(255, 255, 255);
+        transform: rotateY(180deg);
+        box-shadow: 10px 10px 15px rgba(95, 95, 95, 0.5);
+    }
+
+    .back p {
+        padding: 40px;
+    }
+
+    .img-me {
+        width: 40%;
+        height: auto;
+        border-radius: 100px;
+        margin: 30px;
+        padding: 15px;
+        border: 2px solid #000;
+        box-shadow: 10px 10px 15px rgba(95, 95, 95, 0.5);
+    }
+
+    .mi-info-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .line {
+        width: 1px;
+        height: 400px;
+        background-color: #000000;
+        margin: 0 20px;
+    }
+
+    #projects {
+        padding: 15vh 0;
+    }
+
+    .projects-container {
+        display: flex;
+    }
+
+    .project-tile {
+        margin: 30px 0;
+    }
+
+    .project-tile a {
+        color: #000;
+        font-weight: bolder;
+    }
+
+    .img-page {
+        background-color: #ffffff;
+        width: 90%;
+        height: auto;
+        border: 2px solid #000;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 30px;
+        box-shadow: 10px 10px 15px rgba(95, 95, 95, 0.5);
+    }
+
+    .project-tile-public {
+        margin: 60px 0;
+        text-align: center;
+    }
+
+    .img-page-public {
+        width: 50%;
+        height: auto;
+        border: 5px solid rgba(48, 48, 48, 0.5);
+        padding: 2%;
+        margin: 30px 0 0 0;
+        border-radius: 30px;
+        box-shadow: 10px 0 15px rgba(95, 95, 95, 0.5);
+    }
+
+    .teclado-img {
+        width: 75%;
+        height: auto;
+    }
+
+    footer {
+        text-align: center;
+        color: #000000;
+        padding: 10px;
+    }
+
+    #contacto {
+        padding: 15vh 0;
+    }
+
+    #div-header {
+        margin: 20vh 0;
+    }
+
+    #div-header h1 {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    #div-header p {
+        margin: 0;
+        font-style: italic;
+    }
+
+    #div-medios {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #div-medios a {
+        display: flex;
+        align-items: center;
+        color: #000000;
+        text-decoration: none;
+        margin-right: 50px;
+    }
+
+    #icon-contacto {
+        width: 35px;
+        height: auto;
+        padding: 0 10px;
+    }
+
+    @media screen and (max-width: 1400px) {
+        
+        #navbar a {
+            margin: 0 20px;
+        }
+        
+        #main {
+            padding: 10vh 10vh 0 10vh;
+        }
+        
+        .presentacion-container {
+            flex-direction: column-reverse;
+        }
+        
+        .img-me {
+            width: 80%;
+            height: auto;
+        }
+
+        .mi-info-container {
+            flex-direction: column;
+        }
+
+        .mi-info {
+            text-align: center;
+        }
+        
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: #000000;
+            margin: 0 20px;
+        }
+        
+        .projects-container {
+            flex-direction: column;
+        }
+        
+        .img-page {
+            width: 95%;
+            height: auto;
+        }
+
+        .img-page-public {
+            width: 70%;
+            height: auto;
+        }
+        
+        .teclado-img {
+            width: 95%;
+            height: auto;
+        }
+        
+        #div-header h1 {
+            font-size: 40px;
+        }
+        
+        #div-medios {
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+        }
+        
+        #div-medios a {
+            margin-top: 20px;
+        }
+    }
+</style>
 <body>
     <nav id="navbar">
         <a href="#">Inicio</a>

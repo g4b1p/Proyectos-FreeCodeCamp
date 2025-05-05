@@ -6,6 +6,95 @@
     <link rel="stylesheet" href="pagina-de-documentacion-tecnica.css">
     <title>Página de documentación técnica</title>
 </head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+    body {
+        margin: 0;
+        font-size: 18px;
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+        background-image: linear-gradient(to left bottom, #0083d4, #0593e0, #16a2eb, #28b2f5, #3ac2ff);
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #navbar {
+        font-size: 15px;
+        width: 20%;
+        height: auto;
+        margin: 10px;
+        padding: 25px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 15px rgba(97, 97, 97, 0.5);
+        position: fixed;
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .nav-link {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    #navbar header {
+        margin: 0;
+        font-size: 15px;
+        text-align: center;
+        color: #000000;
+    }
+
+    #main-doc {
+        padding: 2% 2% 2% 28%;
+    }
+
+    .main-section {
+        padding: 25px 0;
+    }
+
+    .main-section header {
+        margin: 0;
+        font-size: 30px;
+        text-align: center;
+        color: #ffffff;
+        text-shadow:
+            1px 1px 0 #8eceff,
+            2px 2px 0 #8eceff,
+            3px 3px 0 #8eceff,
+            4px 4px 0 #8eceff,
+            5px 5px 0 #8eceff;
+    }
+
+    @media screen and (max-width: 1200px) {
+        body {
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        #navbar {
+            width: 90%;
+            height: 60px;
+            overflow-y: auto;
+            position: fixed;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        #main-doc {
+            padding: 15% 2% 2% 2%;
+        }
+
+        #main-doc h1 {
+            text-align: center;
+        }
+
+        .main-section {
+            padding: 100px 0;
+        }
+    }
+</style>
 <body>
     <nav id="navbar">
         <header><h1>CSS Articulo</h1></header>

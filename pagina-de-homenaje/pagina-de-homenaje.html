@@ -6,6 +6,122 @@
     <title>Página de homenaje</title>
     <link rel="stylesheet" href="pagina-de-homenaje.css" />
   </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+    body {
+        margin: 50px;
+        font-size: 20px;
+        color: #ffffff;
+        background-image: url(https://phinf.wevpstatic.net/MjAyMzEwMDVfMjQz/MDAxNjk2NDc1MTcyNzgx.hZojDadWpCq5PntJzLZnpmWqHCOKZfY3L0p-IVXDlUsg.4fD4zqrAJHceCeoK2hbk63cHMBIMnyx-GTkgH-ZTYesg.JPEG/df5f8dc2-a885-4473-9cb3-14631efd3198.jpeg?type=e1920);
+        font-family: "Unbounded", sans-serif;
+    }
+
+    #main {
+        margin: 0 5%;
+    }
+
+    #title {
+        font-size: 70px;
+        text-align: center;
+        margin: 0;
+    }
+
+    hr {
+        margin: 20px 0;
+    }
+
+    #img-div {
+        padding: 40px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    #img-caption {
+        margin: 40px;
+        max-width: 100%;
+        height: auto;
+        text-align: justify;
+    }
+
+    #tribute-info {
+        background-color: #f5f5f5;
+        color: #000000;
+        padding: 10px;
+        border-radius: 50px;
+    }
+
+    #border {
+        margin: 15px;
+        padding: 20px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+    }
+
+    h2 {
+        font-size: 50px;
+        text-align: center;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+    }
+
+    #tribute-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #tribute-div ol {
+        font-size: 25px;
+    }
+
+    #tribute-img {
+        width: 35%;
+        height: auto;
+        display: block;
+    }
+
+    #tribute-link {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 1200px) {
+        #title {
+            font-size: 50px;
+        }
+
+        #img-caption {
+            text-align: justify;
+        }
+
+        #tribute-div {
+            flex-direction: column;
+        }
+        
+        #tribute-img {
+            width: 100%;
+            height: auto;
+        }
+
+        #tribute-div ol {
+            font-size: 22px;
+        }
+    }
+  </style>
   <body>
     <main id="main">
       
